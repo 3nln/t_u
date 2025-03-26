@@ -1,5 +1,5 @@
-# React + TypeScript + Vite
-
+# Folder based router for React
+Using only one router file and you can customize more own routes
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

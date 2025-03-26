@@ -1,14 +1,11 @@
 import { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import generateRoutes from "./router/Router";
+import generateRoutes from "./router";
 
 export default function App() {
   const routes = generateRoutes();
 
-  console.log(
-    routes
-  );
-  
+  console.log(routes);
 
   return (
     <BrowserRouter>

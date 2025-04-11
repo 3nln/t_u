@@ -21,7 +21,7 @@ export function Sidebar({ onAddItem, onDragStart }: SidebarProps) {
 
     if (isMobile) {
         return (
-            <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t flex justify-around p-2 z-50">
+            <div className="fixed bottom-0 left-0 right-0 bg-black/30 backdrop-blur-md border-t flex justify-around p-4 m-2 rounded-2xl z-50">
                 {Object.entries(widgetTypes).map(([type, { icon: Icon }]) => (
                     <button
                         key={type}
@@ -39,7 +39,7 @@ export function Sidebar({ onAddItem, onDragStart }: SidebarProps) {
         <div className="w-64 border-r">
             <ScrollArea className="h-full">
                 <div className="p-4">
-                    <h3 className="text-lg font-semibold mb-4">Unical.dnd</h3>
+                    <h3 className="text-gray-500 text-sm mb-4">Drag and drop</h3>
                     {Object.entries(widgetTypes).map(([type, { icon: Icon, label }]) => (
                         <div
                             key={type}

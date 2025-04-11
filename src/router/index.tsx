@@ -1,3 +1,12 @@
+// function to generate routes for a React application using React Router
+// and dynamic imports. It scans the `../app` directory for all `.tsx` files,
+// converts their paths into route paths, and lazily loads the components.
+// It also includes a 404 Not Found page and an error page. The generated routes
+// are then used in a React application with a `BrowserRouter` and `Suspense`
+// for loading states. The `generateRoutes` function is exported for use in the
+// main application file. The code uses TypeScript for type safety and
+// better development experience.
+
 import { lazy } from "react";
 import type { RouteObject } from "react-router-dom";
 

@@ -1,7 +1,20 @@
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+
 const Page = () => {
   return (
-    <div>
-      <h1>notfound</h1>
+    <div className="flex items-center justify-center h-[80vh]">
+      <div className="flex flex-col items-center justify-center gap-5">
+      <h1>bugun uyga qaytamiz o'g'lim ))</h1>
+      <Button
+        variant="outline"
+        asChild
+      >
+        <Link to="/">
+          <span className="text-sm">Go to Home</span>
+        </Link>
+      </Button>
+      </div>
     </div>
   );
 };

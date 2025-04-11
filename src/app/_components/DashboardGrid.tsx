@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import { Layout, Responsive, WidthProvider } from 'react-grid-layout'
 import { WidgetWrapper } from './WidgetWrapper'
 import { WidgetContent } from './WidgetContent'
-import { Circle, Inbox } from 'lucide-react'
+import {  Inbox } from 'lucide-react'
 
 const ResponsiveGridLayout = WidthProvider(Responsive)
 

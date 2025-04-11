@@ -18,12 +18,6 @@ interface Widget {
   type: keyof typeof widgetTypes
 }
 
-const initialLayout: Layout[] = [
-  { i: 'a', x: 0, y: 0, w: 4, h: 2 },
-  { i: 'b', x: 4, y: 0, w: 4, h: 2 },
-  { i: 'c', x: 8, y: 0, w: 4, h: 2 },
-]
-
 const STORAGE_KEY = 'dashboard-layout'
 
 export default function AdminDashboardBuilder() {
@@ -65,13 +59,13 @@ export default function AdminDashboardBuilder() {
     setItems([...items, { id: newKey, type }])
   }
 
-  const deleteItem = (id: string, e: React.MouseEvent) => {
+  const deleteItem = (id: string) => {
     setItems(items.filter((item) => item.id !== id))
     setLayout(layout.filter((item) => item.i !== id))
     setSelectedWidgetId(null)
   }
 
-  const duplicateItem = (id: string, e: React.MouseEvent) => {
+  const duplicateItem = (id: string) => {
     const itemToDuplicate = items.find((item) => item.id === id)
     const layoutToDuplicate = layout.find((item) => item.i === id)
     if (itemToDuplicate && layoutToDuplicate) {
